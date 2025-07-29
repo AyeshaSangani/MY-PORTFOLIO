@@ -55,7 +55,7 @@ body {
   position: relative;
   height: 80vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('./asset/mug-6966047_1280.jpg') center/cover no-repeat;
+    url('./assets/mug-6966047_1280.jpg') center/cover no-repeat;
   color: #fff;
   text-align: center;
 }
