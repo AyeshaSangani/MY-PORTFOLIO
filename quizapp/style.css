@@ -1,0 +1,135 @@
+/* =======================
+   Global Page Styling
+======================= */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #027585, #b2f4fd);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* =======================
+   Main Container
+======================= */
+.container {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.25);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* =======================
+   Headings
+======================= */
+.quizapp h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: slideDown 0.8s ease;
+}
+
+#question {
+    font-size: 22px;
+    margin-bottom: 25px;
+    font-weight: 500;
+    color: #444;
+    line-height: 1.5em;
+    animation: fadeIn 0.8s ease;
+}
+
+/* =======================
+   Buttons
+======================= */
+.all-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: slideUp 0.8s ease;
+}
+
+.all-buttons button {
+    padding: 14px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    background: #027585;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+}
+
+.all-buttons button:hover {
+    background: #8beffc;
+    color: #444;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+}
+
+.all-buttons button:active {
+    transform: scale(0.97);
+}
+
+/* =======================
+   Result Box
+======================= */
+#btns h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+    margin-top: 20px;
+    padding: 14px;
+    border-radius: 12px;
+    background: #f0f0f0;
+    box-shadow: inset 0px 3px 8px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease;
+}
+
+/* =======================
+   Animations
+======================= */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-30px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+}
+
+/* =======================
+   Responsive Design
+======================= */
+@media (max-width: 600px) {
+    .container {
+        padding: 25px 20px;
+    }
+    .quizapp h1 {
+        font-size: 26px;
+    }
+    #question {
+        font-size: 18px;
+    }
+    .all-buttons button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
